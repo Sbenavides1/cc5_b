@@ -61,3 +61,10 @@ function findProductById(id) {
     }
     return null;
 }
+
+console.log(findProductById(id[0]))
+
+// LineItemTotal 
+function lineItemTotal(cartItem) {
+
+}
