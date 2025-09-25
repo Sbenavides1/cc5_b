@@ -62,9 +62,10 @@ function findProductById(id) {
     return null;
 }
 
-console.log(findProductById(id[0]))
-
 // LineItemTotal 
 function lineItemTotal(cartItem) {
-
+    let product = findProductById(cartItem.productId);
+    let discountedUnitPrice = priceAfterCategoryDiscount(product);
+    return discountedUnitPrice * qty;
 }
+console.log(lineItemTotal(cart[0]));
