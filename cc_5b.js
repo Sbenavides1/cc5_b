@@ -21,3 +21,26 @@ const cart = [
 // Try: "regular", "student", "member", or "vip"
 const customerType = "member";
 
+// Category Discounts
+function getCategoryDiscount(category) {
+    switch(category) {
+        case "gear" : 
+            return 0.10; // 10% off gear
+            break;
+        case "apparel" : 
+            return 0.15 // 15% off apparel
+            break;
+        case "snacks" : 
+            return 0.08 // 8% off snacks
+            break;
+        case "access" : 
+            return 0.05 // 5% off access
+            break;
+        default : 
+            return 0.00 
+            break;
+    }
+}
+        
+console.log(getCategoryDiscount("gear"))
+
